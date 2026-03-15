@@ -1,0 +1,74 @@
+=====================================================
+  Project 7 — Putting It All Together
+  Course: CST-310 Computer Graphics Lecture & Lab | Grand Canyon University
+  Authors: Jared Walker (Part 1), James Hohn (Part 2)
+  Instructor: Ricardo Citro
+  Date: March 15, 2026
+=====================================================
+
+------------------------------------------------------
+SOFTWARE REQUIREMENTS
+------------------------------------------------------
+- Operating System : Ubuntu 22.04 LTS or later
+                     (any Debian-based Linux distro)
+- Compiler         : g++ with C++17 support
+- OpenGL           : Mesa OpenGL or hardware-accelerated OpenGL
+- GLUT             : FreeGLUT
+- GLU              : libglu1-mesa
+
+------------------------------------------------------
+INSTALL DEPENDENCIES
+------------------------------------------------------
+Run the following in a terminal:
+
+  sudo apt install build-essential freeglut3-dev libglu1-mesa-dev -y
+
+------------------------------------------------------
+PART 1 — CheckeredTriangles
+------------------------------------------------------
+Compile:
+  g++ CheckeredTriangles.cpp -o CheckeredTriangles -lGL -lGLU -lglut -std=c++17
+
+Run:
+  ./CheckeredTriangles
+
+Controls:
+  C       - Start / continue spinning
+  P       - Pause spinning
+  U       - Move image up
+  D       - Move image down
+  L       - Move image left
+  R       - Move image right
+  +       - Zoom in
+  -       - Zoom out
+  ESC     - Quit
+
+------------------------------------------------------
+PART 2 — ColorCubeFlyby
+------------------------------------------------------
+Compile:
+  g++ ColorCube.cpp -o ColorCube -lGL -lGLU -lglut -std=c++17
+
+Run:
+  ./ColorCube
+
+Controls:
+  R       - Toggle scene rotation
+  S       - Stop animation
+  C       - Continue animation
+  U       - Move scene up
+  D       - Move scene down
+  +       - Zoom in
+  -       - Zoom out
+  ESC     - Quit
+
+------------------------------------------------------
+NOTES
+------------------------------------------------------
+- No external image files, shaders, or mesh files required.
+- Both programs use the fixed-function OpenGL pipeline.
+- No additional libraries beyond OpenGL, GLU, and FreeGLUT
+  are needed.
+- Screenshots are located in the screenshots/ folder.
+- GitHub repository URL: [Your GitHub repo URL here]
+=====================================================
